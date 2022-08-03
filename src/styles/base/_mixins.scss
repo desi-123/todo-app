@@ -1,0 +1,21 @@
+@mixin btn() {
+  padding: .7rem 1.4rem;
+  border-radius: 4rem;
+  transition: all 0.5s;
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $color-grey-light-1;
+  text-transform: capitalize;
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
+// @mixin link {
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
+

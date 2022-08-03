@@ -1,0 +1,44 @@
+// reset button
+button {
+  border: unset;
+  background: unset;
+  font: unset;
+  color: unset;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__completed-task {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: $mainLightBlue-3;
+  }
+
+  &__btn-status button {
+    @include btn();
+    background-color: $mainBlue;
+    border: 0.2rem solid $mainLightBlue-3;
+
+    & button:not(:last-child) {
+      border-right: none;
+    }
+
+    &:hover {
+      background-color: $mainDarkBlue;
+    }
+  }
+
+  &__clear-completed button {
+    @include btn();
+    background-color: $lightRed;
+    
+    @media only screen and (max-width: $bp-medium) {
+  padding: .1rem;
+  }
+  }
+}

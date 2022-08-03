@@ -1,0 +1,45 @@
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  width: 500px;
+}
+
+input {
+  color: unset;
+  background: unset;
+  font: unset;
+  border: unset;
+  outline: unset;
+}
+
+.form {
+  font-size: 1.9rem;
+  margin: 2rem 15rem;
+  &--add-input {
+    box-shadow: $box-shadow;
+    background-color: $color-grey-light-1;
+    font-weight: 500;
+    padding: 0.7rem 17rem 0.7rem 0.7rem;
+    border-radius: 5rem;
+    border: solid 0.2rem $mainLightBlue-3;
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    @media only screen and (max-width: $bp-medium) {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+  }
+
+
+  &--add-task {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    margin-left: -3.5rem;
+  }
+}

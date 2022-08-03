@@ -1,0 +1,40 @@
+.footer {
+  padding-top: 4rem;
+  font-size: 1.7rem;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 1.7rem;
+
+  &__page-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__task-page {
+    margin-right: 1rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__about-page {
+    margin-right: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__term-page {
+    margin-right: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
