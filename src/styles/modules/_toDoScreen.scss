@@ -8,12 +8,16 @@
   @media only screen and (max-width: $bp-medium) {
     margin-top: 0;
     max-width: 100%;
-    min-height: 50rem;
+    height: 90rem;
+      box-shadow: none;
   }
 }
 
 .section {
   padding: 0.1rem 15rem;
+    @media only screen and (max-width: $bp-medium) {
+  padding: 0;
+  }
 }
 
 .title-heading-two {

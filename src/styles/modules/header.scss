@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
   &__item {
     display: flex;
     justify-content: space-between;
@@ -14,29 +18,29 @@
   }
 
   &--link-home {
-   text-decoration: none;
-   font-size: 2rem;
-   font-weight: 500;
-   color: $color-grey-light-1;
-   margin-right: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-grey-light-1;
+    margin-right: 1rem;
 
-   &:hover {
-    text-decoration: underline;
-    transform: translateY(1.1)
-   }
+    &:hover {
+      text-decoration: underline;
+      transform: translateY(1.1);
+    }
   }
 
-    &--link-about {
-   text-decoration: none;
-   font-size: 2rem;
-   font-weight: 500;
-   color: $color-grey-light-1;
-   margin-right: 7rem;
+  &--link-about {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-grey-light-1;
+    margin-right: 7rem;
 
-   &:hover {
-    text-decoration: underline;
-    transform: translateY(1.1)
-   }
+    &:hover {
+      text-decoration: underline;
+      transform: translateY(1.1);
+    }
   }
 
   &--logo {
