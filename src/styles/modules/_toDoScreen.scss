@@ -4,6 +4,12 @@
   max-width: 110rem;
   min-height: 50rem;
   box-shadow: $box-shadow;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 0;
+    max-width: 100%;
+    min-height: 50rem;
+  }
 }
 
 .section {
@@ -23,6 +29,19 @@
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0.5rem;
+    font-size: 2rem;
+    padding: 0.9rem;
+    margin-left: 15rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 0.2rem;
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin-left: 15rem;
+  }
 
   &:hover {
     transform: skewY(3deg) skewX(20deg) scale(1.1);
@@ -60,6 +79,23 @@
   font-size: 2rem;
   padding: 1.2rem;
   color: $color-grey-light-1;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 1rem;
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.9rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 0.2rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
 
   &__delete {
     color: $lightRed;
@@ -108,14 +144,13 @@
     position: absolute;
     margin-top: -5rem;
     margin-left: 0.1rem;
-    padding: 0.5rem;
-    width: 40rem;
+    padding: 0.1rem;
+    width: 30rem;
     background: $color-grey-light-2;
     border-radius: 2rem;
     display: flex;
     justify-content: space-between;
     z-index: 300;
-    color: red;
   }
   &:hover {
     transform: scaleY(1.1);
@@ -135,5 +170,14 @@
     color: $mainLightBlue-3;
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 0.5rem;
+    font-weight: 500;
   }
 }

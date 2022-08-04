@@ -13,10 +13,26 @@ button {
   flex-direction: row;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   &__completed-task {
     text-transform: capitalize;
     font-size: 1.5rem;
     color: $mainLightBlue-3;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1rem;
+      margin-left: -2rem;
+      padding: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 
   &__btn-status button {
@@ -36,9 +52,9 @@ button {
   &__clear-completed button {
     @include btn();
     background-color: $lightRed;
-    
+
     @media only screen and (max-width: $bp-medium) {
-  padding: .1rem;
-  }
+      padding: 0.1rem;
+    }
   }
 }
