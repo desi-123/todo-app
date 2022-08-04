@@ -2,7 +2,6 @@ ul {
   list-style: none;
   padding: 0;
   line-height: 2rem;
-  width: 500px;
 }
 
 input {
@@ -20,7 +19,8 @@ input {
     box-shadow: $box-shadow;
     background-color: $color-grey-light-1;
     font-weight: 500;
-    padding: 0.7rem 17rem 0.7rem 0.7rem;
+    padding: 0.7rem;
+    width: 50rem;
     border-radius: 5rem;
     border: solid 0.2rem $mainLightBlue-3;
     &:hover {
@@ -29,10 +29,11 @@ input {
 
     @media only screen and (max-width: $bp-medium) {
       font-weight: 200;
-      padding: 0.2rem 10rem 0.2rem 0.2rem;
+      width: 35rem;
+      padding: 0.5rem;
       border-radius: 2rem;
       border: solid 0.2rem $mainLightBlue-3;
-      margin-left: -5rem;
+      margin-left: -7rem;
 
       &:not(:last-child) {
         margin-bottom: 5rem;
@@ -41,10 +42,11 @@ input {
 
     @media only screen and (max-width: $bp-small) {
       font-weight: 100;
-      padding: 0.1rem 7rem 0.1rem 0.1rem;
-      border-radius: 1rem;
+      padding: 0.2rem;
+      width: 27rem;
+      border-radius: 2rem;
       border: solid 0.2rem $mainLightBlue-3;
-      margin-left: -8rem;
+      margin-left: -11rem;
     }
   }
 }
