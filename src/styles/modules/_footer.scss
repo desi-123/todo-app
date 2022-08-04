@@ -1,6 +1,11 @@
 .footer {
   padding-top: 4rem;
   font-size: 1.7rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+      padding-top: 12rem;
+  font-size: 1rem;
+  }
 }
 
 .footer-item {

@@ -32,6 +32,7 @@ input {
       padding: 0.2rem 10rem 0.2rem 0.2rem;
       border-radius: 2rem;
       border: solid 0.2rem $mainLightBlue-3;
+      margin-left: -5rem;
 
       &:not(:last-child) {
         margin-bottom: 5rem;
@@ -43,7 +44,7 @@ input {
       padding: 0.1rem 7rem 0.1rem 0.1rem;
       border-radius: 1rem;
       border: solid 0.2rem $mainLightBlue-3;
+      margin-left: -8rem;
     }
   }
-
 }
