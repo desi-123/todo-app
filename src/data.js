@@ -3,17 +3,17 @@ const data = [
   {
     id: uuid(),
     content: 'Buy milk',
-    done: false,
+    done: true,
   },
   {
     id: uuid(),
     content: 'Amaze them with a great exercise!',
-    done: true,
+    done: false,
   },
   {
     id: uuid(),
     content: 'Rock the onsite interview',
-    done: true,
+    done: false,
   },
 ]
 
