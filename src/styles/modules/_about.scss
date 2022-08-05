@@ -1,12 +1,29 @@
 .about {
   margin: 1rem 9rem;
-  height: 50vh;
-  width: 50rem;
+  height: 100%;
+  width: 60rem;
+
+    @media only screen and (max-width: $bp-large) {
+    margin: 5rem 12rem;
+    height: 100%;
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 1rem 9rem;
+    height: 100%;
+    width: 40rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 1rem 6rem;
+    width: 25rem;
+    height: 100%;
+  }
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 

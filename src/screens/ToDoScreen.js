@@ -23,7 +23,7 @@ const ToDoScreen = () => {
       setResult(tasks)
     }
   }
-  // save data local
+  // save data to local
 
   useEffect(() => {
     const saveTasksInLocal = () => {

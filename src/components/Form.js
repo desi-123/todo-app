@@ -3,12 +3,10 @@ import uuid from 'react-uuid'
 // import { BiCommentAdd } from 'react-icons/bi'
 
 const Form = ({ content, setTasks, tasks, setContent }) => {
-
   const inputTaskHandler = (e) => {
     setContent(e.target.value)
   }
-  
-  
+
   const addTaskHandler = (e) => {
     e.preventDefault()
     setTasks([
@@ -26,6 +24,7 @@ const Form = ({ content, setTasks, tasks, setContent }) => {
         value={content}
         type="text"
         placeholder="What needs to be done?"
+        data-test="input-text"
       />
       <button
         className="btn form--add-task"
